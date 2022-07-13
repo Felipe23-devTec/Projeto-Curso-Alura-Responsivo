@@ -130,7 +130,7 @@ ul{
 
 }
 .swiper-pagination {
-    position: initial;
+    position: initial!important;
 }
 
 /*Card*/
@@ -259,4 +259,100 @@ ul{
 }
 .rodape h2{
     color: #002F52;
+}
+
+.container-titulo{
+    display: none;
+}
+.opcoes{
+    display: none;
+}
+/*Responsividade para Tablet*/
+@media screen and (min-width: 768px){
+    .cabecalho-menu-hamburguer{
+        display: none;
+    }
+    .container-titulo{
+        display: block;
+    }
+    .opcoes{
+        display: flex;
+        
+    }
+    .opcoes input{
+        display: none;
+    }
+    .opcoes-link{
+        text-transform: uppercase;
+        margin: 0 1em;
+        cursor: pointer;
+    }
+    .opcoes-menu:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+    .banner-title{
+        font-size: 36px;
+    }
+    .banner-pesquisar{
+        width: 40%;
+    }
+    .banner-pesquisar::placeholder{
+        background-position: 6em;
+    }
+    .carrosel-titulo{
+        font-size: 26px;
+    }
+    .swiper-pagination{
+        position: initial;
+        bottom: 0;
+        margin: 2em 0 3em 0;
+    }
+    .swiper{
+        width: 50%;
+    }
+    .swiper-button-next:after, 
+    .swiper-button-prev:after {
+        display: block;
+        top: 60%;
+    
+    }
+    .card{
+        width: 40%;
+        margin: 2em auto;
+    }
+    .topicos-titulo{
+        font-size: 24px;
+    }
+    .topicos-link{
+        font-size: 24px;
+    }
+    .contato{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .contato h2{
+        font-size: 24px;
+    }
+    .contato input{
+        width: 40%;
+    }
+    .rodape-principal{
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .rodape-item{
+        display: flex;
+        align-items: center;
+        margin: 1em;
+    }
+    .lista-rodape{
+        padding: 1em;
+    }
+    .rodape-item img{
+        margin-right: 5px;
+    }
 }
